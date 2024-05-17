@@ -1,3 +1,42 @@
+document.querySelector('.history-icon').addEventListener('click', () => {
+   document.querySelector('.history-group').classList.toggle('top');
+   document.querySelector('.history-icon').classList.toggle('rotate');
+});
+
+
+let todayTime = new Date();
+let timeLocal = todayTime.toLocaleTimeString();
+
+let createLi;
+
+const calc = () => {
+    let res;
+    try {
+        res = Function('"use strict"; return (' + displayValue + ')')();
+        createLi = document.createElement('li');
+        createLi.innerHTML = `<span class="time">${timeLocal}</span>
+        <span class="calculate">${document.getElementById('screen').value}= <b>${res}</b></span>`;
+        document.querySelector('.history-group').appendChild(createLi);
+        document.getElementById('top').innerHTML = `${document.getElementById('screen').value}=`;
+        document.getElementById('screen').value = res;
+        displayValue = res.toString();
+    } catch (error) {
+        document.getElementById('screen').value = '-e';
+        displayValue = '';
+    }
+};
+
+
+
+document.querySelector('.history-icon').addEventListener('click', () => {
+   document.querySelector('.history-group').classList.toggle('top');
+   document.querySelector('.history-icon').classList.toggle('rotate');
+});
+function historyRemove() {
+   document.querySelector('.history-group').innerHTML = '<h1>Delete All History <i class="fa-solid fa-trash" onclick="historyRemove()"></i></h1>';
+}
+
+
 function abc() {
    var inputElement = document.getElementById("input");
    var inputValue = inputElement.value;

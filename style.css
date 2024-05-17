@@ -23,11 +23,11 @@ body {
 }
 
 .calculator {
-    border: 1px solid #ff000d !important;
+    /* border: 0px solid #ff000d !important; */
     padding: 20px !important;
-    border-radius: 16px !important;
+    border-radius: 15px !important;
     background: transparent !important;
-    box-shadow: 0px 3px 15px rgba(58, 59, 61, 0.5) !important;
+    box-shadow: 0px 3px 15px rgba(255, 255, 255, 0.5) !important;
 }
 
 .screen {
@@ -36,7 +36,7 @@ body {
     padding: 24px !important;
     margin: 10px !important;
     background: transparent !important;
-    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1) !important;
+    box-shadow: 0px 3px 15px white !important;
     font-size: 40px !important;
     text-align: right !important;
     cursor: pointer !important;
@@ -52,11 +52,11 @@ button {
     width: 60px !important;
     height: 60px !important;
     margin: 10px !important;
-    border-radius: 50% !important;
-    background: transparent !important;
-    color: #131414 !important;
+    border-radius: 15px!important;
+    background: rgba(22, 21, 21, 0.658)  !important;
+    color: #ffffff !important;
     font-size: 20px !important;
-    box-shadow: -8px -8px 15px rgba(251, 1, 1, 0.1) !important;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.514) !important;
     cursor: pointer !important;
 }
 
